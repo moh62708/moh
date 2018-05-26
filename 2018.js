@@ -1,8 +1,7 @@
-$(function (){
+$(function () {
   'use strict';
-  $(window) .scroll(function(){
-    var navbar = $('.navbar');
-    ($(window).scrollTop() >= navbar.height() ? navbar.addClass('scrolled') : navbar.removeClass('scrolled')
-
-  });
-});
+  $(window).scroll(function () {
+    window.console.log($('.navbar').height());
+    window.console.log($(window).scrollTop());  
+  })
+})
